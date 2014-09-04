@@ -1,25 +1,25 @@
 package lab1;
 
-import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
- *
- * @author      your name goes here
- * @version     1.00
+ ** Constructor to pass in details of course including prerequisites, and a method to display the course details
+ * to the console.
+ * 
+ * @author Josh
+ * @version 1.00
  */
 public class AdvancedJavaCourse extends IntroJavaCourse {
 
-    public AdvancedJavaCourse(String prerequisites, String courseName, String courseNumber, double credits) {
+    public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         super(prerequisites, courseName, courseNumber, credits);
-    }    
+    }
 
     @Override
-    public void displayCourseDetails() {     
+    public void displayCourseDetails() {
         System.out.println("Course name: " + getCapitalizedCourseName()
-                + "Course number: " + getCourseNumber()
-                + "Credits: " + getCredits()
-                + "Prerquisites: " + getPrerequisites());
-    
-    }    
+                + "\nCourse number: " + getCourseNumber()
+                + "\nCredits: " + getCredits()
+                + "\nPrerquisites: " + getPrerequisites());
+
+    }
 }

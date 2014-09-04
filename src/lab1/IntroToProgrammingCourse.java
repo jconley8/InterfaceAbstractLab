@@ -3,11 +3,11 @@ package lab1;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here. NOTE: this class has NO PREREQUISITES!
- * Do not change this fact.
+ * Constructor to pass in details of course, and a method to display the course details
+ * to the console.
  *
- * @author      your name goes here
- * @version     1.00
+ * @author Josh Conley
+ * @version 1.00
  */
 public class IntroToProgrammingCourse extends ProgrammingCourse {
 
@@ -16,12 +16,8 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
     }
 
     public void displayCourseDetails() {
-        System.out.println("Course name: " + getCapitalizedCourseName() + 
-                           "Course number: " + getCourseNumber() +
-                           "Credits: " + getCredits());
+        System.out.println("Course name: " + getCapitalizedCourseName()
+                + "\nCourse number: " + getCourseNumber()
+                + "\nCredits: " + getCredits());
     }
-
-
-
-    
 }
