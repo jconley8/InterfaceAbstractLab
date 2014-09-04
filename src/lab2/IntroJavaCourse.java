@@ -3,9 +3,10 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * Constructor to pass in details of course including prerequisites, and a
+ * method to display the course details to the console.
  *
- * @author your name goes here
+ * @author Josh Conley
  * @version 1.00
  */
 public class IntroJavaCourse implements ProgrammingCourse {

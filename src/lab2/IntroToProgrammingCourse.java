@@ -3,12 +3,14 @@ package lab2;
 import javax.swing.JOptionPane;
 
 /**
- * Describe responsibilities here.
+ * Constructor to pass in details of course, and a method to display the course
+ * details to the console.
  *
- * @author      your name goes here
- * @version     1.00
+ * @author Josh Conley
+ * @version 1.00
  */
-public class IntroToProgrammingCourse implements ProgrammingCourse{
+public class IntroToProgrammingCourse implements ProgrammingCourse {
+
     private String courseName;
     private String courseNumber;
     private double credits;
@@ -18,7 +20,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
         this.courseNumber = courseNumber;
         this.credits = credits;
     }
-    
+
     public void displayCourseDetails() {
         System.out.println("Course name: " + getCourseName()
                 + "\nCourse number: " + getCourseNumber()
@@ -30,7 +32,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
     }
 
     public void setCourseNumber(String courseNumber) {
-        if(courseNumber == null || courseNumber.length() == 0) {
+        if (courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
             System.exit(0);
@@ -43,7 +45,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
     }
 
     public void setCredits(double credits) {
-        if(credits < 0.5 || credits > 4.0) {
+        if (credits < 0.5 || credits > 4.0) {
             JOptionPane.showMessageDialog(null,
                     "Error: credits must be in the range 0.5 to 4.0");
             System.exit(0);
@@ -56,7 +58,7 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
     }
 
     public void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
+        if (courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
             System.exit(0);
@@ -64,5 +66,4 @@ public class IntroToProgrammingCourse implements ProgrammingCourse{
         this.courseName = courseName;
     }
 
-    
 }

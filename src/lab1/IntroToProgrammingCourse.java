@@ -1,7 +1,5 @@
 package lab1;
 
-import javax.swing.JOptionPane;
-
 /**
  * Constructor to pass in details of course, and a method to display the course details
  * to the console.

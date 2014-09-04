@@ -28,7 +28,7 @@ public abstract class ProgrammingCourse {
     public final String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }
-    
+
     public final void setCourseNumber(String courseNumber) {
         if (courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
