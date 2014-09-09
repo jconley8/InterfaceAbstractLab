@@ -16,14 +16,17 @@ public abstract class ProgrammingCourse {
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
 
-    public ProgrammingCourse(String courseName, String courseNumber, double credits) {
+    public ProgrammingCourse(String courseName, String courseNumber, double credits, String prerequisites) {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
         this.credits = credits;
+        this.prerequisites = prerequisites;
     }
 
     public abstract void displayCourseDetails();
+
 
     public final String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
@@ -67,5 +70,14 @@ public abstract class ProgrammingCourse {
     public double getCredits() {
         return credits;
     }
+    
+    public String getPrerequisites() {
+        return prerequisites;
+    }
+
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
+
 
 }

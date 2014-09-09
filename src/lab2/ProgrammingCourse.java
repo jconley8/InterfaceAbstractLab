@@ -5,6 +5,8 @@
  */
 package lab2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Josh
@@ -24,5 +26,11 @@ public interface ProgrammingCourse {
     public abstract void setCourseNumber(String courseNumber);
 
     public abstract void setCredits(double credits);
+    
+    public abstract String getPrerequisites();
+
+    public abstract void setPrerequisites(String prerequisites);
+
+  
 
 }

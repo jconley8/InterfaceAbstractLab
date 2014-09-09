@@ -8,10 +8,10 @@ package lab1;
  * @author Josh
  * @version 1.00
  */
-public class AdvancedJavaCourse extends IntroJavaCourse {
+public class AdvancedJavaCourse extends ProgrammingCourse {
 
     public AdvancedJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
-        super(prerequisites, courseName, courseNumber, credits);
+        super(courseName, courseNumber, credits, prerequisites);
     }
 
     @Override

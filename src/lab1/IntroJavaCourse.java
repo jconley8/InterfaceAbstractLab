@@ -11,11 +11,8 @@ import javax.swing.JOptionPane;
  */
 public class IntroJavaCourse extends ProgrammingCourse {
 
-    private String prerequisites;
-
-    public IntroJavaCourse(String prerequisites, String courseName, String courseNumber, double credits) {
-        super(courseName, courseNumber, credits);
-        this.prerequisites = prerequisites;
+    public IntroJavaCourse(String courseName, String courseNumber, double credits, String prerequisites) {
+        super(courseName, courseNumber, credits, prerequisites);
     }
 
     public void displayCourseDetails() {
@@ -25,16 +22,4 @@ public class IntroJavaCourse extends ProgrammingCourse {
                 + "\nPrerquisites: " + getPrerequisites());
     }
 
-    public String getPrerequisites() {
-        return prerequisites;
-    }
-
-    public void setPrerequisites(String prerequisites) {
-        if (prerequisites == null || prerequisites.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.prerequisites = prerequisites;
-    }
 }
